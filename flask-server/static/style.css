@@ -1,0 +1,106 @@
+:root {
+    /* size */
+}
+
+body {
+   height: 100vh;
+   width: 100vw;
+   margin: 0;
+}
+
+.top {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.top .first{
+    height: 100%;
+    width: 33%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 0.2em 0.2em 0.2em 0.2em;
+}
+
+.top .second{
+    height: 100%;
+    width: 33%;
+    border-style: solid;
+    border-width: 0.2em 0.2em 0.2em 0em;
+}
+
+.top .second .top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 0em 0em 0.2em 0em;
+}
+
+.top .second .top span{
+    font-size: 10em;
+}
+
+.top .second .bottom{
+    height: 50%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 0em 0em 0.2em 0em;
+}
+
+.top .third{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.2em 0.2em 0.2em 0em;
+}
+
+.bottom {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.bottom .first{
+    height: 97%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 0em 0.2em 0.2em 0.2em;
+    }
+
+.bottom .first .secondary_box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom .second {
+    height: 97%;
+    width: 66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 0em 0.2em 0.2em 0em;
+}
+
+.bottom .second .secondary_box{
+    height: 80%;
+    width: 60%;
+}
