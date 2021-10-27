@@ -1,6 +1,6 @@
 ### READEME.md
 
-# flask-server
+# flask_dashboard
 하나의 대시보드 화면에 여러 개의 차트를 비동기적으로 업데이트 합니다.
 - Flask Server는 서드 파티의 연산기로부터 데이터를 지속적으로 업데이트 합니다.
 - 대시보드는 지속적으로 Flask Server에 최신 요청합니다.
