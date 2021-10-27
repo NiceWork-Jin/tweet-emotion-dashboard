@@ -1,0 +1,9 @@
+# You can run with this command on the cmd in an upper directory named "tweet-emotion-dashboard".
+
+# For the Mac.
+FLASK_APP=flask-server FLASK_ENV=development flask run
+
+# For the Windows.
+export FLASK_APP=flask-server
+export FLASK_ENV=development
+flask run
