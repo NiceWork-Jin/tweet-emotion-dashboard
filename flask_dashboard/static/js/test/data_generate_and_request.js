@@ -30,7 +30,7 @@ setInterval(function(){
       , url: "/update_react_num_per_sec"
       , data: reactNumberGenerator()
       , error:function(data){
-            alert("1");
+            console.log('Error while sending to /update_react_num_per_sec')
         }
     });
 }, 1000);
@@ -41,7 +41,7 @@ setInterval(function(){
       , url: "/update_react_num_per_min"
       , data: reactNumberGenerator()
       , error:function(data){
-            alert("2");
+            console.log('Error while sending to /update_react_num_per_min')
         }
     });
 }, 1000);
@@ -52,7 +52,8 @@ setInterval(function(){
       , url: "/update_top_five_hashtags_per_min"
       , data: top5HashTagGenerator()
       , error:function(data){
-            console.log('에러..')
+            console.log('Error while sending to /update_top_five_hashtags_per_min')
         }
     });
 }, 1000);
+

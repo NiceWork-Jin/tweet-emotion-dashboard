@@ -6,7 +6,7 @@ from serverSocket import ServerSocket
 def load_my_auth():
     """
     [Note] auth.txt location is different by person. I stored my auth.txt separated from the Project for security.
-    You should enter your consumer_key, consumer_secret, access_token, access_token_secret got from Tweet Developer
+    Plus, You should enter your consumer_key, consumer_secret, access_token, access_token_secret got from Tweet Developer
     into "auth.txt" without line-break.
 
 
@@ -19,7 +19,7 @@ def load_my_auth():
         }
     """
 
-    with open('~/programming/secure_info/auth.txt', 'r') as f:
+    with open('/Users/seongjin/programming/secure_info/auth.txt', 'r') as f:
         return json.load(f)
 
 
@@ -36,6 +36,7 @@ if __name__ == '__main__':
     Launch Tweepy and send data to Spark for preprocessing Data.
     You should launch structuredStreaming.py after main.py is started in this Project.    
     """
+
     s_socket = ServerSocket('localhost', 9999)
     tweetListener = TweetListener(s_socket, load_my_auth())
     tweetListener.filter(track=['squid game'], languages=['en'])
