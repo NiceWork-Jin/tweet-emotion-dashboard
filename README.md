@@ -11,3 +11,4 @@
 
 # tweepy2Spark
 - 소켓을 생성한 뒤 트위터로 데이터를 가져옵니다. 가져온 데이터는 구조화된 스파크 스트리밍을 통해 처리합니다.
+- 위에 있는 jupyter_preprocessingWithSpark의 코드와 동일한 파일 .py 형식으로 존재합니다.
