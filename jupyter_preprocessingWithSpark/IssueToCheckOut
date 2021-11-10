@@ -1,0 +1,9 @@
+- "/refresh_top_five_hashtags_per_min", uri in the dashboard keeps every data. It could require high memory as increasing data size. 
+
+=> The volume of data should be limited as 1 minute. 
+=> Data has to take from Spark.
+
+- Consider uri name changing. because of readability
+
+
+-  
