@@ -1,12 +1,15 @@
-=======================================================
-- "/refresh_top_five_hashtags_per_min", uri in the dashboard keeps every data. It could require high memory as increasing data size. 
+=============================================================================
+- "/refresh_top_five_hashtags_per_min", uri in the dashboard keeps every data. 
+It could require high memory as increasing data size. 
 - Data arrived time has to be generated time. NOT arrived at DashBoard time.
 Currently, refreshCreatedAtAndScoreArray() in flask_dashboard wrote like that.
 
 => The volume of data should be limited as 1 minute. 
 => Data has to take from Spark.
-=======================================================
+=============================================================================
 - Consider uri name changing. because of readability
-
-
--  
+==============================================================================
+Same Data coming from tweepy. which even has a same id of tweet.
+duplicated data should be removed!
+==============================================================================
+ 

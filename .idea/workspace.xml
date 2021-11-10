@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b1fee520-0bee-42ab-abe9-3fd1b2f30d68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jupyter_preprocessingWithSpark/.ipynb_checkpoints/Predicting TweetWorld Emotion(Not-completed yet. Check codes using back-up in the same folder)-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter_preprocessingWithSpark/.ipynb_checkpoints/Predicting TweetWorld Emotion(Not-completed yet. Check codes using back-up in the same folder)-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jupyter_preprocessingWithSpark/Predicting TweetWorld Emotion(Not-completed yet. Check codes using back-up in the same folder).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter_preprocessingWithSpark/Predicting TweetWorld Emotion(Not-completed yet. Check codes using back-up in the same folder).ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweepy2Spark/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
