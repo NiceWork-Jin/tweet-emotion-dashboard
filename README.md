@@ -52,7 +52,7 @@
 ![data_process_architecture](https://user-images.githubusercontent.com/42059680/141749385-593762c7-f45d-4bd8-adac-6513bdba3303.jpeg)
 
 스파크 세션을 생성하고, [main.py](http://main.py)을 통해 트위터 데이터를 전송 받습니다. 전송받은 데이터는 스파크의 구조화된 스트리밍을 통해 전처리 했습니다. 전처리된 데이터는 Web API인 *[http://localhost:5000/](http://localhost:5000/~~)location 로 전달됩니다. 따라서 반드시 [tweetListener.py](https://github.com/nicework-jin/tweet-emotion-dashboard/blob/master/tweepy2Spark/tweetListener.py)를 실행하기 전에 Web API를 실행시켜 5000번 포트를 열어둬야 합니다.
-- 참고로 앞에서 언급한 주소에서 location은 실제 주소를 의미하지 않습니다. 해당 주소는 전달하고자 하는 데이터의 종류에 따라 다른 값을 가집니다.  각 location에 대해서는 "대시보드 표현"에서 설명합니다.
+- 참고로 앞에서 언급한 주소에서 location은 실제 주소를 의미하지 않습니다. 해당 주소는 전달하고자 하는 데이터의 종류에 따라 다른 값을 가집니다.  각 location에 대해서는 "대시보드"에서 설명합니다.
 
 ## Code explantion
 [structuredStreaming.py](https://github.com/nicework-jin/tweet-emotion-dashboard/blob/master/tweepy2Spark/structuredStreaming.py)를 통해 확인할 수 있습니다.
