@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b1fee520-0bee-42ab-abe9-3fd1b2f30d68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_dashboard/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_dashboard/static/js/react_num_per_sec.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/static/js/react_num_per_sec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_dashboard/static/js/test/data_generate_and_request.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/static/js/test/data_generate_and_request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_dashboard/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/templates/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +43,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.__init__">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tweet-emotion-dashboard" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,8 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
