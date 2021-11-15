@@ -3,10 +3,9 @@
 트위터의 특정 키워드에 대한 사용자의 반응을 대시보드를 통해 나타냅니다.
 
 # 실행 결과
-https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c07a0aa6-8979-4e07-915f-e2fd0eafad39/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T082451Z&X-Amz-Expires=86400&X-Amz-Signature=1ef77848c45e36eb0c9cb150d88fd22d06430bec88040d3da57da243ae66e222&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22![image](https://user-images.githubusercontent.com/42059680/141747320-5ec67d30-8bad-435a-8e09-2ca29cb065ed.png)
+https://user-images.githubusercontent.com/42059680/141749397-0177095b-cb1b-4745-a174-633b65d80abd.png
 
 # Skill/Verion
-
 - Python 3.8
 - Spark 3.2
 - Tweepy 4.3.0
@@ -15,15 +14,12 @@ https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c07a0aa6-8979-4e07-9
 - CSS
 
 # Work Environment
-
 - Mac m1 (Single machine)
 - Pycharm
 - Jupyter Notebook (작업 코드 디버깅)
 
 # Architecture
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/49ad4725-ff64-4009-8516-f6e55a4f7a05/Untitled.jpeg)
-
+https://user-images.githubusercontent.com/42059680/141749305-4c7c8edc-e404-464b-b441-fa9c07bcb83f.jpeg
 - 데이터 수집
     - 트위터의 실시간 데이터를 수집을 위해 Tweepy 라이브러리를 사용했습니다.
     - 수집된 데이터는 TCP 통신을 통하여 Spark로 전달됩니다.
@@ -37,15 +33,12 @@ https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c07a0aa6-8979-4e07-9
     - DashBoard는 JavaScript의 Chart.js를 주로 사용했습니다.
 
 # 데이터 수집
-
 ## Architecture
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3a00c004-7e5b-46ca-802f-77579e4fd06f/Untitled.jpeg)
+https://user-images.githubusercontent.com/42059680/141749355-9a637eef-a1ba-4cfe-ab13-44fcfd5045b3.jpeg
 
 트위터 데이터는 TCP 통신을 통해 스파크로 전달 됩니다. 따라서 트위터에 데이터를 요청하기 전에 소켓 간에 연결 객체를 생성합니다. 양측 소켓이 연결되고 나면, 서버는 트위터에 데이터를 요청합니다. 서버는 트위터에서 수신 받은 데이터를 연결된 소켓 객체를 통해 클라이언트로 전달합니다. 데이터 전송을 멈추고 싶다면, 클라이언트 측에서 소켓을 닫습니다.
 
 ## Code explantion
-
 [tweepy2Spark](https://github.com/nicework-jin/tweet-emotion-dashboard/tree/master/tweepy2Spark)를 통해 확인할 수 있습니다. 
 
 (주의!) TweetListener.py를 사용하기 위해 main.py의 load_my_auth()에서 요구하는 정보를 채워 넣습니다. 작성자는 키 값 보안을 위해 별도의 텍스트 파일을 생성하여 저장 했습니다.
@@ -79,13 +72,11 @@ https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c07a0aa6-8979-4e07-9
 # 대시보드
 
 ## Architecture
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ff20e982-7174-47c1-9c70-51a5974b73ab/Untitled.jpeg)
+https://user-images.githubusercontent.com/42059680/141749418-9185f2c1-8985-46c2-beef-c6202cf9d7b8.jpeg
 
 대시보드는 Web API와 View로 구성되어 있습니다. Web API를 동작시키면 자동으로 뷰가 활성화 됩니다. 뷰는 차트의 성격에 따라 주기적으로 Web API에 데이터를 요청하게 됩니다. 그리고 Web API는 현재 보유한 데이터를 대시보드로 전송합니다. 스파크에서 주기적으로 Web API에 데이터를 전송하고 있으므로, 데이터는 계속적으로 갱신 됩니다. 이 때, 데이터의 타임스탬프는 대시보드에 도착한 시각이 아니라 데이터가 발생된 시각을 기준으로 합니다. 그렇지 않으면, 전송 지연이 발생 했을 시에 정확한 정보 파악이 어려워질 수 있습니다.
 
 ## Code explantion
-
 [flask_dashboard](https://github.com/nicework-jin/tweet-emotion-dashboard/tree/master/flask_dashboard)를 통해 확인할 수 있습니다. 대시보드의 기본 포트는 5000번을 사용 합니다. 따라서 [http://localhost:5000/location의](http://localhost:5000/location의) 형식을 가지고 있습니다. 이 때, location은 의미에 따라 다른 값을 가집니다. 하지만 여전히 일관된 규칙을 가지고 있습니다. location이 update로 시작하는 경우에는 spark가 web API로 데이터를 전송할 때 사용 됩니다. refresh로 시작하는 경우에는 뷰에서 Web API로 데이터를 요청할 때 사용되는 주소입니다. 
 
 ### Location별 설명
