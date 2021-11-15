@@ -34,13 +34,13 @@
 
 # 데이터 수집
 ## Architecture
-![data_source_architecture](https://user-images.githubusercontent.com/42059680/141749355-9a637eef-a1ba-4cfe-ab13-44fcfd5045b3.jpeg)
+![source_architecture](https://user-images.githubusercontent.com/42059680/141751257-370f4874-367f-43cd-a7b3-320bd2f678a4.jpeg)
 트위터 데이터는 TCP 통신을 통해 스파크로 전달 됩니다. 따라서 트위터에 데이터를 요청하기 전에 소켓 간에 연결 객체를 생성합니다. 양측 소켓이 연결되고 나면, 서버는 트위터에 데이터를 요청합니다. 서버는 트위터에서 수신 받은 데이터를 연결된 소켓 객체를 통해 클라이언트로 전달합니다. 데이터 전송을 멈추고 싶다면, 클라이언트 측에서 소켓을 닫습니다.
 
 ## Code explantion
 [tweepy2Spark](https://github.com/nicework-jin/tweet-emotion-dashboard/tree/master/tweepy2Spark)를 통해 확인할 수 있습니다. 
 
-(주의!) TweetListener.py를 사용하기 위해 main.py의 load_my_auth()에서 요구하는 정보를 채워 넣습니다. 작성자는 키 값 보안을 위해 별도의 텍스트 파일을 생성하여 저장 했습니다.
+(주의!) TweetListener.py를 사용하기 위해 main.[main.py](http://main.py)의 load_my_auth()에서 요구하는 정보를 채워 넣습니다. 작성자는 키 값 보안을 위해 별도의 텍스트 파일을 생성하여 저장 했습니다.
 
 1. [main.py](http://main.py)을 실행하면 서버 소켓이 생성되고, 클라이언트가 연결되기를 기다립니다. 
 2. 클라이언트 연결을 위해 [structuredStreaming.py](https://github.com/nicework-jin/tweet-emotion-dashboard/blob/master/tweepy2Spark/structuredStreaming.py)를 실행합니다.
