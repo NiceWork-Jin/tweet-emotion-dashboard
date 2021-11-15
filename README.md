@@ -10,6 +10,7 @@
 - Spark 3.2
 - Tweepy 4.3.0
 - JavaScript
+- Chart.js 3.2.0
 - HTML
 - CSS
 
