@@ -3,8 +3,7 @@
 트위터의 특정 키워드에 대한 사용자의 반응을 대시보드를 통해 나타냅니다.
 
 # 실행 결과
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c07a0aa6-8979-4e07-915f-e2fd0eafad39/Untitled.png)
+https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c07a0aa6-8979-4e07-915f-e2fd0eafad39/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T082451Z&X-Amz-Expires=86400&X-Amz-Signature=1ef77848c45e36eb0c9cb150d88fd22d06430bec88040d3da57da243ae66e222&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22![image](https://user-images.githubusercontent.com/42059680/141747320-5ec67d30-8bad-435a-8e09-2ca29cb065ed.png)
 
 # Skill/Verion
 
