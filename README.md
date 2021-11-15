@@ -40,7 +40,7 @@
 ## Code explantion
 [tweepy2Spark](https://github.com/nicework-jin/tweet-emotion-dashboard/tree/master/tweepy2Spark)를 통해 확인할 수 있습니다. 
 
-(주의!) TweetListener.py를 사용하기 위해 main.[main.py](http://main.py)의 load_my_auth()에서 요구하는 정보를 채워 넣습니다. 작성자는 키 값 보안을 위해 별도의 텍스트 파일을 생성하여 저장 했습니다.
+(주의!) TweetListener.py를 사용하기 위해 [main.py](http://main.py)의 load_my_auth()에서 요구하는 정보를 채워 넣습니다. 작성자는 키 값 보안을 위해 별도의 텍스트 파일을 생성하여 저장 했습니다.
 
 1. [main.py](http://main.py)을 실행하면 서버 소켓이 생성되고, 클라이언트가 연결되기를 기다립니다. 
 2. 클라이언트 연결을 위해 [structuredStreaming.py](https://github.com/nicework-jin/tweet-emotion-dashboard/blob/master/tweepy2Spark/structuredStreaming.py)를 실행합니다.
