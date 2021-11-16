@@ -51,10 +51,10 @@ let RECENT_TOP_FIVE_ARRAY = {
 }
 
 setInterval(function(){
-    $.getJSON('/refresh_top_five_hashtags_per_min', {
+    $.getJSON('/get/top_five_hashtags/min/1', {
     }, function(data) {
         RECENT_TOP_FIVE_ARRAY.labels = Object.keys(data);
         RECENT_TOP_FIVE_ARRAY.numberByLabel = Object.values(data);
     });
     refreshTop5HashTagPerMinHorizBar();
-}, 2000);
+}, 10000);

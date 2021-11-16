@@ -28,10 +28,6 @@ const reactNumPerMinDonut = new Chart(reactNumPerMinDonutId, {
     }
 });
 
-function refreshReactNumPerMinDonut(){
-    reactNumPerMinDonut.data.datasets[0].data = [RECENT_VALUES_PER_MIN_ARRAY.positive, RECENT_VALUES_PER_MIN_ARRAY.neutral, RECENT_VALUES_PER_MIN_ARRAY.negative];
-    reactNumPerMinDonut.update();
-}
 
 let RECENT_VALUES_PER_MIN_ARRAY = {
       'positive': 0
@@ -39,12 +35,21 @@ let RECENT_VALUES_PER_MIN_ARRAY = {
     , 'negative': 0
 }
 
+function refreshReactNumPerMinDonut(){
+    reactNumPerMinDonut.data.datasets[0].data = [
+              RECENT_VALUES_PER_SEC_ARRAY.positive
+            , RECENT_VALUES_PER_SEC_ARRAY.neutral
+            , RECENT_VALUES_PER_SEC_ARRAY.negative
+    ];
+    reactNumPerMinDonut.update();
+}
+
 setInterval(function(){
-    $.getJSON('/refresh_react_num_per_min', {},
+    $.getJSON('/get/sentiment_level_number/min/1', {},
      function(data) {
             RECENT_VALUES_PER_MIN_ARRAY.positive = data.positive;
             RECENT_VALUES_PER_MIN_ARRAY.neutral = data.neutral;
             RECENT_VALUES_PER_MIN_ARRAY.negative = data.negative;
         });
     refreshReactNumPerMinDonut();
-}, 1000);
+}, 10000);
