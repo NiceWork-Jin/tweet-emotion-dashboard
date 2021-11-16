@@ -74,9 +74,9 @@
 ### Location별 설명
 /update_react_num_per_sec : "긍정, 중립, 부정 개수 / 최근 1초"를 전송 받음
 - 데이터 형식: {"positive": 0, "neutral": 0, "negative": 0, "createdAtArray": [], "scoreArray": []}
- * createdAtArray의 원소는 Date iso 형식을 따름
- * ScoreArray의 각 원소는 positive, neutral, negative의 평균 점수를 나타냄.
- * createdAtArray와 ScoreArray는 서로 매칭되어 표현되므로, 동일한 개수가 입력되어야 함.
+    - createdAtArray의 원소는 Date iso 형식을 따름
+    - ScoreArray의 각 원소는 positive, neutral, negative의 평균 점수를 나타냄.
+    - createdAtArray와 ScoreArray는 서로 매칭되어 표현되므로, 동일한 개수가 입력되어야 함.
 
 /update_react_num_per_min : "긍정, 중립, 부정 개수 / 최근 1분"를 전송 받음.
 - 데이터 형식: {"positive": 0, "neutral": 0, "negative": 0}
