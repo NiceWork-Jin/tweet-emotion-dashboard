@@ -72,21 +72,21 @@
 [flask_dashboard](https://github.com/nicework-jin/tweet-emotion-dashboard/tree/master/flask_dashboard)를 통해 확인할 수 있습니다. 대시보드의 기본 포트는 5000번을 사용 합니다. 따라서 [http://localhost:5000/location의](http://localhost:5000/location의) 형식을 가지고 있습니다. 이 때, location은 의미에 따라 다른 값을 가집니다. 하지만 여전히 일관된 규칙을 가지고 있습니다. location이 update로 시작하는 경우에는 spark가 web API로 데이터를 전송할 때 사용 됩니다. refresh로 시작하는 경우에는 뷰에서 Web API로 데이터를 요청할 때 사용되는 주소입니다. 
 
 ### Location별 설명
-/update_react_num_per_sec : "긍정, 중립, 부정 개수 / 최근 1초"를 전송 받음
-- 데이터 형식: {"positive": 0, "neutral": 0, "negative": 0, "createdAtArray": [], "scoreArray": []}
-    - createdAtArray의 원소는 Date iso 형식을 따름
-    - ScoreArray의 각 원소는 positive, neutral, negative의 평균 점수를 나타냄.
-    - createdAtArray와 ScoreArray는 서로 매칭되어 표현되므로, 동일한 개수가 입력되어야 함.
+- /update_react_num_per_sec : "긍정, 중립, 부정 개수 / 최근 1초"를 전송 받음
+    - 데이터 형식: {"positive": 0, "neutral": 0, "negative": 0, "createdAtArray": [], "scoreArray": []}
+        - createdAtArray의 원소는 Date iso 형식을 따름
+        - ScoreArray의 각 원소는 positive, neutral, negative의 평균 점수를 나타냄.
+        - createdAtArray와 ScoreArray는 서로 매칭되어 표현되므로, 동일한 개수가 입력되어야 함.
 
-/update_react_num_per_min : "긍정, 중립, 부정 개수 / 최근 1분"를 전송 받음.
-- 데이터 형식: {"positive": 0, "neutral": 0, "negative": 0}
+- /update_react_num_per_min : "긍정, 중립, 부정 개수 / 최근 1분"를 전송 받음.
+    - 데이터 형식: {"positive": 0, "neutral": 0, "negative": 0}
 
 /update_top_five_hashtags_per_min : "가장 많이 언급된 해쉬태그 탑 파이브 / 1분"를 전송 받음.
-- 데이터 형식: {'hashtag01': 0, 'hashtag02': 0, 'hashtag03': 0, 'hashtag04': 0, 'hashtag05': 0} 
+    - 데이터 형식: {'hashtag01': 0, 'hashtag02': 0, 'hashtag03': 0, 'hashtag04': 0, 'hashtag05': 0} 
 
-/refresh_react_num_per_sec : "react_num_per_sec"를 view에 전시
-/refresh_react_num_per_min : "react_num_per_min"를 view에 전시
-/refresh_top_five_hashtags_per_min : "top_five_hashtags_per_min"를 view에 전시
+- /refresh_react_num_per_sec : "react_num_per_sec"를 view에 전시
+- /refresh_react_num_per_min : "react_num_per_min"를 view에 전시
+- /refresh_top_five_hashtags_per_min : "top_five_hashtags_per_min"를 view에 전시
 
 ### 대시보드 실행 방법
 대시보드는 터미널을 통해 실행시킬 수 있습니다. 
