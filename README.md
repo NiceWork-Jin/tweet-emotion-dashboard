@@ -72,6 +72,7 @@
 [flask_dashboard](https://github.com/nicework-jin/tweet-emotion-dashboard/tree/master/flask_dashboard)를 통해 확인할 수 있습니다. 대시보드의 기본 포트는 5000번을 사용 합니다. 따라서 [http://localhost:5000/location의](http://localhost:5000/location의) 형식을 가지고 있습니다. 이 때, location은 의미에 따라 다른 값을 가집니다. 하지만 여전히 일관된 규칙을 가지고 있습니다. location이 update로 시작하는 경우에는 spark가 web API로 데이터를 전송할 때 사용 됩니다. get로 시작하는 경우에는 뷰에서 Web API로 데이터를 요청할 때 사용되는 주소입니다. 
 
 ### Location별 설명
+##### update
 - /update/sentiment_level_number/sec/1 : 최근 1초 동안 긍정, 중립, 부정에 따른 개수를 전송
     - 데이터 형식: {"positive": 0, "neutral": 0, "negative": 0}
      
@@ -85,7 +86,7 @@
     - 데이터 형식: {"createdAtArray": [12:21:04, 12:21:05], "scoreArray": [2, 3]} 
         - createdAtArray와 ScoreArray는 서로 매칭되어 표현되므로, 동일한 개수가 입력되어야 함.
         - ScoreArray의 각 원소는 positive, neutral, negative의 평균 점수를 나타냄.
-
+##### get
 - /get/sentiment_level_number/sec/1 : "sentiment_level_number/sec/1"로부터 받은 데이터를 view에 전시
 - /get/sentiment_level_number/min/1 : "sentiment_level_number/min/1"로부터 받은 데이터를 view에 전시
 - /get/top_five_hashtags/min/1 : "top_five_hashtags/min/1"를 view로부터 받은 데이터를 view에 전시
