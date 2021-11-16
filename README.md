@@ -80,7 +80,7 @@
     - 데이터 형식: {"positive": 0, "neutral": 0, "negative": 0}
 
 - /update/top_five_hashtags/min/1 : 최근 1분 동안 가장 많이 언급된 해쉬태그 탑 5를 전송
-    - 데이터 형식: {'hashtag01': 0, 'hashtag02': 0, 'hashtag03': 0, 'hashtag04': 0, 'hashtag05': 0} 
+    - 데이터 형식: {data: {'hashtag01': 0, 'hashtag02': 0, 'hashtag03': 0, 'hashtag04': 0, 'hashtag05': 0}}
 
 - /update/sentiment_score_time_series : 초 단위로 기록된 평균 감정 점수를 전송 받음
     - 데이터 형식: {"createdAtArray": [12:21:04, 12:21:05], "scoreArray": [2, 3]} 
