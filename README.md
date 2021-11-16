@@ -81,7 +81,7 @@
 - /update_react_num_per_min : "긍정, 중립, 부정 개수 / 최근 1분"를 전송 받음.
     - 데이터 형식: {"positive": 0, "neutral": 0, "negative": 0}
 
-/update_top_five_hashtags_per_min : "가장 많이 언급된 해쉬태그 탑 파이브 / 1분"를 전송 받음.
+- /update_top_five_hashtags_per_min : "가장 많이 언급된 해쉬태그 탑 파이브 / 1분"를 전송 받음.
     - 데이터 형식: {'hashtag01': 0, 'hashtag02': 0, 'hashtag03': 0, 'hashtag04': 0, 'hashtag05': 0} 
 
 - /refresh_react_num_per_sec : "react_num_per_sec"를 view에 전시
