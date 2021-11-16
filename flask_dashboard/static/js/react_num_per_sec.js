@@ -1,5 +1,5 @@
 "use strict";
-
+// Chart : This presents the number of Sentiment levels by bar chart with seconds.
 const reactNumPerSecBarId = document.getElementById('reactNumPerSecBar').getContext('2d');
 const reactNumPerSecBar = new Chart(reactNumPerSecBarId, {
     type: 'bar',
@@ -32,6 +32,7 @@ const reactNumPerSecBar = new Chart(reactNumPerSecBarId, {
     }
 });
 
+// Chart : This presents an average score for each second. The maximum amount of data is limited to 60.
 const reactScorePerSecTimeSeriesId = document.getElementById('reactScorePerSecTimeSeries').getContext('2d');
 const reactScorePerSecTimeSeries = new Chart(reactScorePerSecTimeSeriesId, {
     type: 'line',
@@ -64,6 +65,7 @@ function refreshScore(){
     document.getElementById("reactScorePerSec").innerHTML = RECENT_VALUES_PER_SEC_ARRAY.score;
 }
 
+
 function refreshEmojiByScore() {
     if (RECENT_VALUES_PER_SEC_ARRAY.score > 0.32) {
         document.getElementById("emojiByScorePerSec").src = "/static/imgs/emozi_positive.png";
@@ -74,11 +76,6 @@ function refreshEmojiByScore() {
     }
 }
 
-//function refreshCreatedAtAndScoreArray() {
-//    let today = new Date();
-//    let time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds()
-//    RECENT_VALUES_PER_SEC_ARRAY.createdAtAndScoreArray.push({x: time, y: RECENT_VALUES_PER_SEC_ARRAY.score});
-//}
 
 function refreshReactNumPerSecBar(){
     reactNumPerSecBar.data.datasets[0].data = [
@@ -89,21 +86,23 @@ function refreshReactNumPerSecBar(){
     reactNumPerSecBar.update();
 }
 
+
 function refreshReactScorePerSecTimeSeries(){
-//    refreshCreatedAtAndScoreArray();
-    reactScorePerSecTimeSeries.data.datasets[0].data = RECENT_VALUES_PER_SEC_ARRAY.createdAtAndScoreArray;
-    reactScorePerSecTimeSeries.data.labels = RECENT_VALUES_PER_SEC_ARRAY.createdAt;
+    reactScorePerSecTimeSeries.data.datasets[0].data = RECENT_VALUES_PER_SEC_ARRAY.scoreArray;
+    reactScorePerSecTimeSeries.data.labels = RECENT_VALUES_PER_SEC_ARRAY.createdAtArray;
     reactScorePerSecTimeSeries.update();
 }
+
 
 let RECENT_VALUES_PER_SEC_ARRAY = {
       'positive': 0
     , 'neutral': 0
     , 'negative': 0
-    , 'score': []
-    , 'createdAt': []
-    , 'createdAtAndScoreArray': []
+    , 'score': 0
+    , 'scoreArray': []
+    , 'createdAtArray': []
 }
+
 
 setInterval(function(){
     $.getJSON('/refresh_react_num_per_sec', {},
@@ -111,9 +110,8 @@ setInterval(function(){
         RECENT_VALUES_PER_SEC_ARRAY.positive = Number(data.positive);
         RECENT_VALUES_PER_SEC_ARRAY.neutral = Number(data.neutral);
         RECENT_VALUES_PER_SEC_ARRAY.negative = Number(data.negative);
-        RECENT_VALUES_PER_SEC_ARRAY.createdAtAndScoreArray = JSON.parse(data.createdAtAndScoreArray);
-        RECENT_VALUES_PER_SEC_ARRAY.createdAt = JSON.parse(data.createdAt);
-        RECENT_VALUES_PER_SEC_ARRAY.score = JSON.parse(data.score);
+        RECENT_VALUES_PER_SEC_ARRAY.createdAtArray = JSON.parse(data.createdAtArray);
+        RECENT_VALUES_PER_SEC_ARRAY.scoreArray = JSON.parse(data.scoreArray);
 });
     refreshReactNumPerSecBar();
     refreshScore();

@@ -2,8 +2,7 @@ from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-# react_num_per_sec = {"positive": 0, "neutral": 0, "negative": 0, "createdAtAndScoreArray": []}
-react_num_per_sec = {"positive": 0, "neutral": 0, "negative": 0, "createdAt": [], "score": [], "createdAtAndScoreArray": []}
+react_num_per_sec = {"positive": 0, "neutral": 0, "negative": 0, "createdAtArray": [], "scoreArray": []}
 react_num_per_min = {"positive": 0, "neutral": 0, "negative": 0}
 top_five_hashtags_per_min = {'hashtag01': 0, 'hashtag02': 0, 'hashtag03': 0, 'hashtag04': 0, 'hashtag05': 0}
 
@@ -19,9 +18,8 @@ def update_react_num_per_sec():
     react_num_per_sec['positive'] = request.form['positive_num']
     react_num_per_sec['neutral'] = request.form['neutral_num']
     react_num_per_sec['negative'] = request.form['negative_num']
-    react_num_per_sec['createdAtAndScoreArray'] = request.form['createdAtAndScoreArray']
-    react_num_per_sec['createdAt'] = request.form['createdAt']
-    react_num_per_sec['score'] = request.form['score']
+    react_num_per_sec['createdAtArray'] = request.form['createdAtArray']
+    react_num_per_sec['scoreArray'] = request.form['scoreArray']
     return 'success', 200
 
 
