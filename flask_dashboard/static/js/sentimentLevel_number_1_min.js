@@ -37,9 +37,9 @@ let RECENT_VALUES_PER_MIN_ARRAY = {
 
 function refreshReactNumPerMinDonut(){
     reactNumPerMinDonut.data.datasets[0].data = [
-              RECENT_VALUES_PER_SEC_ARRAY.positive
-            , RECENT_VALUES_PER_SEC_ARRAY.neutral
-            , RECENT_VALUES_PER_SEC_ARRAY.negative
+              RECENT_VALUES_PER_MIN_ARRAY.positive
+            , RECENT_VALUES_PER_MIN_ARRAY.neutral
+            , RECENT_VALUES_PER_MIN_ARRAY.negative
     ];
     reactNumPerMinDonut.update();
 }
