@@ -89,8 +89,8 @@
 #### get
 - /get/sentiment_level_number/sec/1 : "sentiment_level_number/sec/1"로부터 받은 데이터를 view에 전시
 - /get/sentiment_level_number/min/1 : "sentiment_level_number/min/1"로부터 받은 데이터를 view에 전시
-- /get/top_five_hashtags/min/1 : "top_five_hashtags/min/1"를 view로부터 받은 데이터를 view에 전시
-- /get/sentiment_score_time_series: "update/sentiment_score_time_series"로부터 받은 데이터를 view에 전시
+- /get/top_five_hashtags/min/1 : "top_five_hashtags/min/1"로부터 받은 데이터를 view에 전시
+- /get/sentiment_score_time_series: "sentiment_score_time_series"로부터 받은 데이터를 view에 전시
 
 ### 대시보드 실행 방법
 대시보드는 터미널을 통해 실행시킬 수 있습니다. 
