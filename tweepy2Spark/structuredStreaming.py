@@ -1,25 +1,31 @@
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import window, rank, sum
+from pyspark.sql.functions import udf
+from pyspark.sql.types import TimestampType
+from pyspark.sql.functions import json_tuple
+from pyspark.sql.window import Window
+from pyspark.sql.functions import col
+from pyspark.sql.functions import regexp_extract
+import requests
 import ast
 import json
 from langdetect import detect
 from textblob import TextBlob
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import udf
-from pyspark.sql.functions import json_tuple
-from pyspark.sql.functions import col
+import datetime
+import os
+import shutil
 
-# Open the Session.
+
 spark = SparkSession \
     .builder \
     .appName("Predicting TweetWorld Emotion") \
     .getOrCreate()
 
+spark.conf.set("spark.sql.shuffle.partitions", "5")
 
-# Define UDFs
-def double_quotes_json(json_single):
-    """
-    Get Double quotes json form from single quotes Json form.
-    """
 
+# UTFs
+def convert_json_double(json_single):
     json_dict = ast.literal_eval(json_single)
     return json.dumps(json_dict)
 
@@ -29,33 +35,42 @@ def detect_language(text):
 
 
 def get_sentiment(text):
-    # positive: 2, netural: 1, negotive: 0
     sentiment = TextBlob(text).sentiment.polarity
-
     if sentiment > 0:
-        return 2
+        return 1  # Positive
     elif sentiment < 0:
-        return 0
+        return -1  # Negative
     else:
-        return 1
+        return 0  # Neutral
 
 
-double_quotes_json_udf = udf(lambda x: double_quotes_json(x))
+def from_created_at(x):
+    """
+    parsing format : "https://docs.python.org/3/library/datetime.html#datetime.date"
+
+    The valuable of 'x' has a form of 'Thu Oct 21 07:02:44 +0000 2021'
+    """
+    dt = datetime.datetime.strptime(x, "%a %b %d %H:%M:%S %z %Y")
+    return dt.isoformat()
+
+
+convert_json_double_udf = udf(lambda x: convert_json_double(x))
 detect_language_udf = udf(lambda x: detect_language(x))
 get_sentiment_utf = udf(lambda x: get_sentiment(x))
+from_created_at_udf = udf(lambda x: from_created_at(x))
 
 
-# Load sample data and get schema.
-with open("data/sample_tweet.txt", 'r') as f:
-    originSingleQuotes = f.readline()
-    originDoubleQuotes = double_quotes_json(originSingleQuotes)
+# Load Data
+# Use sample data to easily extract column names through inferSchema
+with open("./data/sample_tweet.txt", 'r') as f:
+    SingleQuotesJSON = f.readline()
+    DoubleQuotesJSON = convert_json_double(SingleQuotesJSON)
 
-sc = spark.sparkContext
-originRDD = sc.parallelize([originDoubleQuotes])
-originDF = spark.read.json(originRDD)
-columns = originDF.columns
+sampleRDD = spark.sparkContext.parallelize([DoubleQuotesJSON])
+sampleDF = spark.read.json(sampleRDD)
+columns = sampleDF.columns
 
-# Send a connection request to the Server Socket.
+# Read Streaming data from socket
 socketDF = spark \
     .readStream \
     .format("socket") \
@@ -64,22 +79,173 @@ socketDF = spark \
     .load()
 
 
-# PreProcessing for extract data available.
-jsonDF = socketDF.select(double_quotes_json_udf("value").alias("value"))
-multiColDF = jsonDF.select(json_tuple("value", *columns)).toDF(*columns)
+# Load only neccesary data
+originDF = socketDF.select(convert_json_double_udf("value").alias("value")) \
+    .select(json_tuple("value", *columns)).toDF(*columns) \
+    .select("created_at", "text")
 
-# Select columns and adjust preprocessing with UDF.
-df = multiColDF.select("created_at", "text")
-df = df.select("created_at", "text", detect_language_udf("text").alias("lang"))
-df = df.filter(col("lang") == "en")
-sentimentDF = df.select("created_at", "text", get_sentiment_utf(col("text")).alias("sentiment_level"))
 
-# Let's launch our Spark
-launch = sentimentDF \
+# Pre-processing
+readyDF = originDF.select(
+    # Convert the form of "created_at" to ISO format for casting as TimestampType.
+    from_created_at_udf(col("created_at")).cast(TimestampType()).alias("created_at"),
+
+    # Estimate sentiment level. Positive, Neutral and Negative.
+    get_sentiment_utf(col("text")).alias("sentiment_level"),
+
+    # Verify langage through text.
+    detect_language_udf(col("text")).alias("lang"),
+
+    # Extract a hashtag from the text. It starts with "@"
+    regexp_extract(col("text"), '(@\w+)', 1).alias("hashtag")
+).filter(col("lang") == "en")
+
+
+# Intermediate Save before executing window functions
+file_name = "ready_table"
+
+spark_warehouse_loc = f'./spark-warehouse/{file_name}'
+checkpoint_loc = f'./checkpoint/dir/{file_name}'
+
+if os.path.exists(spark_warehouse_loc):
+    shutil.rmtree(spark_warehouse_loc)
+
+if os.path.exists(checkpoint_loc):
+    shutil.rmtree(checkpoint_loc)
+
+readyDF.writeStream \
+    .option("checkpointLocation", checkpoint_loc) \
+    .toTable(file_name)
+
+
+# Window Function
+class WindowAggregator(object):
+    def __init__(self, uri, host='127.0.0.1', port=5000):
+        self.uri = uri
+        self.target = f'http://{host}:{port}/{uri}'
+
+    def sentiment_level_num(self, df, epoch_id):
+        countByLevelDF = df \
+            .groupBy("window") \
+            .pivot("sentiment_level", ['1', '0', '-1']) \
+            .sum("count") \
+            .drop("window") \
+            .na.fill(0) \
+            .toDF('positive', 'neutral', 'negative')
+
+        self.send_data(countByLevelDF)
+
+    def hashtag_top_five(self, df, epoch_id):
+        window = Window \
+            .partitionBy(df['window']) \
+            .orderBy(df['count'].desc(), df['hashtag'])
+
+        rank4SortDF = df \
+            .select('*', rank() \
+                    .over(window).alias('rank')) \
+            .filter(col('rank') <= 2)
+
+        hashTagTopFiveDF = rank4SortDF \
+            .groupBy("window") \
+            .pivot("hashtag") \
+            .agg(sum("count")) \
+            .drop("window")
+
+        self.send_data_with_nested_form(hashTagTopFiveDF)
+
+    def send_data(self, df):
+        data_list = df \
+            .toJSON() \
+            .collect()
+
+        if not data_list:
+            return
+
+        for data in data_list:
+            requests.post(
+                self.target,
+                data=json.loads(data)
+            )
+
+    def send_data_with_nested_form(self, df):
+        data_list = df \
+            .toJSON() \
+            .collect()
+
+        if not data_list:
+            return
+
+        for data in data_list:
+            form = {'data': ''}
+            form_inner = json.dumps(ast.literal_eval(data))
+            form['data'] = form_inner
+
+            requests.post(
+                self.target,
+                data=form
+            )
+
+
+# Sentiment_level_Sec
+sentimentLevelNumSecDF = spark.readStream \
+    .table("ready_table") \
+    .withWatermark("created_at", "2 seconds") \
+    .groupBy(
+        window(col("created_at"), "1 seconds"), col("sentiment_level")
+    ) \
+    .count()
+
+exec_sentimentLevelNumSecDF = sentimentLevelNumSecDF \
     .writeStream \
-    .outputMode("append") \
-    .queryName("sentimentDF") \
-    .format("console") \
+    .foreachBatch(
+        WindowAggregator('update/sentiment_level_number/sec/1') \
+        .sentiment_level_num) \
     .start()
 
-launch.awaitTermination()
+
+# Sentiment_level_Min
+sentimentLevelNumMinDF = spark.readStream \
+    .table("ready_table") \
+    .withWatermark("created_at", "10 seconds") \
+    .groupBy(
+        window(col("created_at"), "5 seconds"), col("sentiment_level")
+    ) \
+    .count()
+
+exec_sentimentLevelNumSecDF = sentimentLevelNumSecDF \
+    .writeStream \
+    .foreachBatch(
+        WindowAggregator('update/sentiment_level_number/min/1') \
+        .sentiment_level_num) \
+    .start()
+
+
+# Top5 HashTag
+HashTagNumMinDF = spark.readStream \
+    .table("ready_table") \
+    .withWatermark("created_at", "1 minutes") \
+    .groupBy(
+        window(col("created_at"), "20 seconds", "10 seconds"), col("hashtag")
+    ) \
+    .count() \
+    .where(col("hashtag") != '')
+
+exec_sentimentLevelNumSecDF = HashTagNumMinDF \
+    .writeStream \
+    .foreachBatch(
+        WindowAggregator('update/top_five_hashtags/min/1') \
+        .hashtag_top_five) \
+    .start()
+
+
+# SentimentScore_TimeSeires  :: Woring on it
+# df = spark.readStream \
+#     .table("ready_table") \
+#     .withWatermark("created_at", "1 seconds") \
+#     .groupBy(
+#         window(col("created_at"), "20 seconds"), col("hashtag")
+#     ) \
+#     .count() \
+#     .where(col("hashtag") != '')
+
+spark.streams.awaitAnyTermination()
