@@ -97,6 +97,6 @@
 - 터미널에서 flask_dashboard 폴더가 저장된 이전 폴더로 이동합니다.
 - MAC의 경우에는 FLASK_APP=flask_dashboard FLASK_ENV=development flask run를 cmd에 입력합니다.
 - Windows의 경우에는 아래 세 줄을 차례로 명령합니다.
-    - export FLASK_APP=flask_dashboard
-    - export FLASK_ENV=development
+    - set FLASK_APP=flask_dashboard
+    - set FLASK_ENV=development
     - flask run
