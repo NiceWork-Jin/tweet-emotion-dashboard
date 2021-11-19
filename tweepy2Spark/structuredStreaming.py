@@ -1,11 +1,11 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import window, rank, sum
 from pyspark.sql.functions import udf
 from pyspark.sql.types import TimestampType
 from pyspark.sql.functions import json_tuple
-from pyspark.sql.window import Window
 from pyspark.sql.functions import col
 from pyspark.sql.functions import regexp_extract
+from pyspark.sql.functions import window, rank, sum
+from pyspark.sql.window import Window
 import requests
 import ast
 import json
@@ -119,19 +119,6 @@ readyDF.writeStream \
 
 
 # Window Function
-from pyspark.sql.functions import window, rank, sum
-from pyspark.sql.window import Window
-import requests
-import json
-import ast
-
-from pyspark.sql.functions import window, rank, sum
-from pyspark.sql.window import Window
-import requests
-import json
-import ast
-
-
 class WindowAggregator(object):
     def __init__(self, uri, host='127.0.0.1', port=5000):
         self.uri = uri

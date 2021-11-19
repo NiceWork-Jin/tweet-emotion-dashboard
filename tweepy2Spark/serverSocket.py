@@ -1,4 +1,5 @@
 import socket
+import time
 
 
 class ServerSocket(object):
@@ -16,3 +17,16 @@ class ServerSocket(object):
         msg = msg + '\n'
         self.client_server.send(msg.encode('utf-8'))
         print("ServerSocket sent a message!")
+
+    def fake_tweet_api(self):
+        it = self.fake_tweet_load()
+        while True:
+            self.client_server.send(next(it).encode('utf-8'))
+            time.sleep(1)
+
+    def fake_tweet_load(self):
+        with open('./data/sample_tweet.txt', 'r') as f:
+            for x in f:
+                if not x:
+                    break
+                yield x

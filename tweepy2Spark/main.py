@@ -1,4 +1,5 @@
 import json
+
 from tweetListener import TweetListener
 from serverSocket import ServerSocket
 
@@ -33,9 +34,17 @@ if __name__ == '__main__':
     # tweetListener.filter(track=['squid game'], languages=['en'])
 
     """
-    Launch Tweepy and send data to Spark for preprocessing Data.
-    You should launch structuredStreaming.py after main.py is started in this Project.    
+    Fake Tweet API.
+    You can use it instead of real tweet API.
     """
     s_socket = ServerSocket('localhost', 9999)
-    tweetListener = TweetListener(s_socket, load_my_auth())
-    tweetListener.filter(track=['NewYork'], languages=['en'])
+    s_socket.fake_tweet_api()
+
+    """
+    Launch Tweepy and send data to Spark for preprocessing.
+    You should launch structuredStreaming.py after main.py is started in this Project.    
+    """
+    # s_socket = ServerSocket('localhost', 9999)
+    # tweetListener = TweetListener(s_socket, load_my_auth())
+    # tweetListener.filter(track=['NewYork'], languages=['en'])
+

@@ -6,13 +6,248 @@
   <component name="ChangeListManager">
     <list default="true" id="3622d2b5-d8d9-44bd-8bbc-bd82ce602d5a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flask_dashboard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flask_dashboard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flask_dashboard/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../flask_dashboard/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flask_dashboard/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/../flask_dashboard/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/.ipynb_checkpoints/Predicting_TweetWorld_Emotion-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/.ipynb_checkpoints/Predicting_TweetWorld_Emotion-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/SocketListener.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/SocketListener.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/.ipynb_checkpoints/SocketListener-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/Fake_TweetSocketAPI.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/Fake_TweetSocketAPI.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/SocketListener.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/commits/42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/metadata" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/0" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/1" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/10" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/11" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/12" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/13" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/14" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/14" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/15" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/15" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/16" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/17" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/17" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/18" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/18" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/19" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/19" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/2" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/20" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/21" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/21" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/22" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/22" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/23" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/23" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/24" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/24" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/25" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/25" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/26" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/27" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/27" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/28" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/28" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/29" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/29" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/3" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/30" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/30" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/31" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/31" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/32" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/32" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/33" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/33" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/34" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/34" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/35" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/35" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/36" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/36" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/37" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/37" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/38" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/38" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/39" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/39" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/4" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/40" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/40" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/41" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/41" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/5" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/6" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/7" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/8" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/9" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint/dir/ready_table/offsets/9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sample_tweet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/sample_tweet.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serverSocket.py" beforeDir="false" afterPath="$PROJECT_DIR$/serverSocket.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweetListener.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweetListener.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-0758aadb-72ed-4b9c-812d-de1123dc41a8-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-08fb7064-d797-44f2-a918-75de12cf2933-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-0d0022a4-a663-4fb2-ab77-ad9271f88bd8-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-0fcec1a2-74da-434a-a187-2c3e663b1c55-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-11ca8c68-251a-4cfd-a6b2-3adb14a01edf-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-26ff21b7-1353-46ab-aa2b-121d50a6ab4f-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-27712ca3-d8cb-4c01-a66d-12878f71bec7-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-35dbf867-73c0-4e9a-8f38-8f550315147e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-38b41f3a-f155-44c3-95c1-63b6ccf13c29-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-55fc8bd1-95b1-4300-a6c9-5ddbd35650a2-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-57aa5fc2-0be2-4991-b4b3-c0c0c1043f66-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-57d3eb33-f612-4027-8904-b415580d1ce5-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-5ab0870e-0f81-4418-a827-343a5d374448-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-5ddd8786-c778-4db2-a5ca-e9e674b2c61d-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-606b8ebd-4a92-4ebd-83bb-6e0ce29c8337-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-72cf869f-8ede-4d59-88e3-98a747255bf0-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-73fc810e-f558-4e5b-b530-4d082599f7e1-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-76c58c12-9711-4095-89f7-5ffd62d5f4fd-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-7c8d719e-eb7c-4d2c-95b5-27ca49130b1c-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-8054455f-4de2-4238-9164-652dfd9c15cb-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-8416a9ef-8434-430c-9604-a39279c6e877-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-86f4a039-ddef-4d78-b522-45d8e6558a5e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-8b6f70e5-f7e4-4a98-8ba3-bf0bad102f08-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-8efabbf4-baf4-4fa1-94a5-07a454dae7eb-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-96a8b1a5-cc36-4436-b159-535afb4ce826-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-9e4504d6-92b0-4122-92e1-3c00aac30e23-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-9fa92fad-7526-4520-9ea7-2cccd329eb27-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-a2b87f35-63a7-46aa-adb9-b83be0ea99a3-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-b078d3d3-52b8-4ab7-9f72-0d0e0bc32fee-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-b212c80c-8535-4922-ac39-203b58c52d6f-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-b882fef2-f125-468b-86c4-af74ea4dc9df-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-ba89e61e-79a7-4ae5-b9c2-3a97c583d1e1-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-bf660ae8-eef3-4985-87d9-469ba2d2e2fe-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-c8409bec-f80d-4328-a2f6-4ae0e346184b-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-ca5865d0-9ca0-4955-b277-732cc9318b6d-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-dc5656bd-0d34-4037-8bc5-e57a79b9d99a-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-de0dba68-34e5-47b4-998a-ec76ab75d865-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-e84a9031-6a38-4880-943a-d6f997c9de9e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-eb90a91d-e429-4e9a-b9c3-a3cb97fb6948-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-f102d8ed-2852-4eef-b2eb-e9b35ab3f998-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-f76d5175-f7ba-48a5-93b7-61c8762f2713-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-fdbb7218-5c85-4243-a7f6-67d3e4ef213e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00000-fea46225-d80e-4bad-abc4-6c67d322a791-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-0a1298a0-cb89-4529-b916-2d01ea973207-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-1a8269a2-f4b7-4e37-a695-d1aec1e1ef8c-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-214911cf-2302-4c03-a5a0-98bd3928554f-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-39133fd4-7315-4b65-ae30-9a927be4a0ac-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-3f5b95cf-9980-4679-aac7-15773e7f8acf-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-600e8531-654b-49a2-bf75-558e1e85d3e6-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-6e89d3d8-7422-4813-aeb7-f68882fc3d81-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-7d52dbd7-5958-489c-826e-3ff78cccd4ba-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-81467424-86fb-40a4-8594-5329e7b6bb0e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-a97c4443-97f5-4017-8574-86948113ef71-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-b78a764e-4ca1-4277-81b6-fd5f9ef233df-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-c5969b32-0566-48ed-9db1-60da3069a025-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00001-c8e2befa-7584-4dff-846b-b44444b8b54e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00002-2e46ccaa-deb2-4d1c-97db-71dc6da3be72-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00002-510d7d31-d157-490c-8800-0c47e65bc48e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00002-5d641923-8350-4260-8a9d-f695381ec751-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00002-683560d4-b363-4017-a0c0-07e04a051e6b-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00002-757c3c57-355b-4949-8d7d-e96a762bbe6d-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00002-fbe6a608-3942-4f4e-b449-ed14f728a693-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00003-80318544-08c2-46b6-9f8f-f4ef54b2ea2c-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00003-96bea40b-898d-48b8-bae7-cadab2937daf-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00003-99ebbda2-f76f-4886-b50e-606b90e223b9-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00004-5a021310-5a95-4e15-8ff5-55c031ef49ae-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00004-bb329be9-741f-433b-b3a0-fd602ce0788d-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00004-e551845e-2f13-49a8-90ad-5a171f30e203-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00005-efd75f37-d56a-4c50-ac56-149f385361bb-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00006-63bd621d-600c-47d1-922d-5941a62e9aea-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/.part-00007-da379a5a-036c-4129-ba3d-5d7876daf566-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/0" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/1" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/10" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/11" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/12" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/13" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/14" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/14" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/15" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/15" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/16" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/17" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/17" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/18" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/18" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/19.compact" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/19.compact" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/2" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/20" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/21" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/21" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/22" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/22" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/23" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/23" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/24" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/24" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/25" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/25" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/26" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/27" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/27" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/28" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/28" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/29.compact" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/29.compact" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/3" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/30" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/30" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/31" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/31" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/32" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/32" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/33" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/33" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/34" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/34" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/35" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/35" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/36" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/36" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/37" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/37" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/38" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/38" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/39.compact" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/39.compact" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/4" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/40" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/40" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/41" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/41" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/5" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/6" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/7" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/8" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/9.compact" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/ready_table/_spark_metadata/9.compact" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-0758aadb-72ed-4b9c-812d-de1123dc41a8-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-08fb7064-d797-44f2-a918-75de12cf2933-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-0d0022a4-a663-4fb2-ab77-ad9271f88bd8-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-0fcec1a2-74da-434a-a187-2c3e663b1c55-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-11ca8c68-251a-4cfd-a6b2-3adb14a01edf-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-26ff21b7-1353-46ab-aa2b-121d50a6ab4f-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-27712ca3-d8cb-4c01-a66d-12878f71bec7-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-35dbf867-73c0-4e9a-8f38-8f550315147e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-38b41f3a-f155-44c3-95c1-63b6ccf13c29-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-55fc8bd1-95b1-4300-a6c9-5ddbd35650a2-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-57aa5fc2-0be2-4991-b4b3-c0c0c1043f66-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-57d3eb33-f612-4027-8904-b415580d1ce5-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-5ab0870e-0f81-4418-a827-343a5d374448-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-5ddd8786-c778-4db2-a5ca-e9e674b2c61d-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-606b8ebd-4a92-4ebd-83bb-6e0ce29c8337-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-72cf869f-8ede-4d59-88e3-98a747255bf0-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-73fc810e-f558-4e5b-b530-4d082599f7e1-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-76c58c12-9711-4095-89f7-5ffd62d5f4fd-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-7c8d719e-eb7c-4d2c-95b5-27ca49130b1c-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-8054455f-4de2-4238-9164-652dfd9c15cb-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-8416a9ef-8434-430c-9604-a39279c6e877-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-86f4a039-ddef-4d78-b522-45d8e6558a5e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-8b6f70e5-f7e4-4a98-8ba3-bf0bad102f08-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-8efabbf4-baf4-4fa1-94a5-07a454dae7eb-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-96a8b1a5-cc36-4436-b159-535afb4ce826-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-9e4504d6-92b0-4122-92e1-3c00aac30e23-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-9fa92fad-7526-4520-9ea7-2cccd329eb27-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-a2b87f35-63a7-46aa-adb9-b83be0ea99a3-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-b078d3d3-52b8-4ab7-9f72-0d0e0bc32fee-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-b212c80c-8535-4922-ac39-203b58c52d6f-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-b882fef2-f125-468b-86c4-af74ea4dc9df-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-ba89e61e-79a7-4ae5-b9c2-3a97c583d1e1-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-bf660ae8-eef3-4985-87d9-469ba2d2e2fe-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-c8409bec-f80d-4328-a2f6-4ae0e346184b-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-ca5865d0-9ca0-4955-b277-732cc9318b6d-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-dc5656bd-0d34-4037-8bc5-e57a79b9d99a-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-de0dba68-34e5-47b4-998a-ec76ab75d865-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-e84a9031-6a38-4880-943a-d6f997c9de9e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-eb90a91d-e429-4e9a-b9c3-a3cb97fb6948-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-f102d8ed-2852-4eef-b2eb-e9b35ab3f998-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-f76d5175-f7ba-48a5-93b7-61c8762f2713-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-fdbb7218-5c85-4243-a7f6-67d3e4ef213e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00000-fea46225-d80e-4bad-abc4-6c67d322a791-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-0a1298a0-cb89-4529-b916-2d01ea973207-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-1a8269a2-f4b7-4e37-a695-d1aec1e1ef8c-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-214911cf-2302-4c03-a5a0-98bd3928554f-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-39133fd4-7315-4b65-ae30-9a927be4a0ac-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-3f5b95cf-9980-4679-aac7-15773e7f8acf-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-600e8531-654b-49a2-bf75-558e1e85d3e6-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-6e89d3d8-7422-4813-aeb7-f68882fc3d81-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-7d52dbd7-5958-489c-826e-3ff78cccd4ba-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-81467424-86fb-40a4-8594-5329e7b6bb0e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-a97c4443-97f5-4017-8574-86948113ef71-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-b78a764e-4ca1-4277-81b6-fd5f9ef233df-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-c5969b32-0566-48ed-9db1-60da3069a025-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00001-c8e2befa-7584-4dff-846b-b44444b8b54e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00002-2e46ccaa-deb2-4d1c-97db-71dc6da3be72-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00002-510d7d31-d157-490c-8800-0c47e65bc48e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00002-5d641923-8350-4260-8a9d-f695381ec751-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00002-683560d4-b363-4017-a0c0-07e04a051e6b-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00002-757c3c57-355b-4949-8d7d-e96a762bbe6d-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00002-fbe6a608-3942-4f4e-b449-ed14f728a693-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00003-80318544-08c2-46b6-9f8f-f4ef54b2ea2c-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00003-96bea40b-898d-48b8-bae7-cadab2937daf-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00003-99ebbda2-f76f-4886-b50e-606b90e223b9-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00004-5a021310-5a95-4e15-8ff5-55c031ef49ae-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00004-bb329be9-741f-433b-b3a0-fd602ce0788d-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00004-e551845e-2f13-49a8-90ad-5a171f30e203-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00005-efd75f37-d56a-4c50-ac56-149f385361bb-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00006-63bd621d-600c-47d1-922d-5941a62e9aea-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/ready_table/part-00007-da379a5a-036c-4129-ba3d-5d7876daf566-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structuredStreaming.py" beforeDir="false" afterPath="$PROJECT_DIR$/structuredStreaming.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +268,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.structuredStreaming">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tweetAPIwithTweepy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -47,6 +282,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="serverSocket" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tweetAPIwithTweepy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/serverSocket.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,8 +355,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.structuredStreaming" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.serverSocket" />
         <item itemvalue="Python.tweetListener" />
       </list>
     </recent_temporary>
