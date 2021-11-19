@@ -83,7 +83,7 @@
     - 데이터 형식: {data: {'hashtag01': 0, 'hashtag02': 0, 'hashtag03': 0, 'hashtag04': 0, 'hashtag05': 0}}
 
 - /update/sentiment_score_time_series : 초 단위로 기록된 평균 감정 점수를 전송 받음
-    - 데이터 형식: {"createdAtArray": [12:21:04, 12:21:05], "scoreArray": [2, 3]} 
+    - 데이터 형식: {'createdAtArray': ["12:21:04", "12:21:05"], 'scoreArray': ["58.2", "33.2"]} 
         - createdAtArray와 ScoreArray는 서로 매칭되어 표현되므로, 동일한 개수가 입력되어야 함.
         - ScoreArray의 각 원소는 positive, neutral, negative의 평균 점수를 나타냄.
 #### get
