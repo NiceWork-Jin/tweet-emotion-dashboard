@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="270f5229-7131-444b-b610-875998b2d70b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/run-command" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/.ipynb_checkpoints/Predicting TweetWorld Emotion(back-up)-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/.ipynb_checkpoints/Predicting TweetWorld Emotion-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/.ipynb_checkpoints/Preprocessing tweet data-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/Predicting TweetWorld Emotion(back-up).ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/Predicting TweetWorld Emotion.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/data/tweet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/.idea/tweetAPIwithTweepy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/data/sample_tweet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/serverSocket.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/structuredStreaming.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/tweetListener.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/.ipynb_checkpoints/Predicting_TweetWorld_Emotion-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../jupyter_preprocessingWithSpark/.ipynb_checkpoints/Predicting_TweetWorld_Emotion-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/data/sample_tweet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../tweepy2Spark/data/sample_tweet.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tweepy2Spark/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/serverSocket.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tweepy2Spark/serverSocket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/structuredStreaming.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tweepy2Spark/structuredStreaming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tweepy2Spark/tweetListener.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tweepy2Spark/tweetListener.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
