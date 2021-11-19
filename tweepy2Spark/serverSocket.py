@@ -2,7 +2,7 @@ import socket
 
 
 class ServerSocket(object):
-    def __init__(self, addr, port, backlog=1):
+    def __init__(self, addr, port, backlog=2):
         self.addr = addr
         self.port = port
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

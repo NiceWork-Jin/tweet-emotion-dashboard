@@ -15,7 +15,7 @@ class TweetListener(tweepy.Stream):
     def on_status(self, status):
         data = status._json
         if self.s_socket == "print":
-            # This is for test printing on the cmd.
+            # This is for FakeData_generator printing on the cmd.
             print(data)
         else:
             self.s_socket.write(str(data))

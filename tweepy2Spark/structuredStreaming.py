@@ -21,7 +21,7 @@ spark = SparkSession \
     .appName("Predicting TweetWorld Emotion") \
     .getOrCreate()
 
-spark.conf.set("spark.sql.shuffle.partitions", "5")
+spark.conf.set("spark.sql.shuffle.partitions", "1")
 
 
 # UTFs
@@ -119,6 +119,19 @@ readyDF.writeStream \
 
 
 # Window Function
+from pyspark.sql.functions import window, rank, sum
+from pyspark.sql.window import Window
+import requests
+import json
+import ast
+
+from pyspark.sql.functions import window, rank, sum
+from pyspark.sql.window import Window
+import requests
+import json
+import ast
+
+
 class WindowAggregator(object):
     def __init__(self, uri, host='127.0.0.1', port=5000):
         self.uri = uri
@@ -127,7 +140,7 @@ class WindowAggregator(object):
     def sentiment_level_num(self, df, epoch_id):
         countByLevelDF = df \
             .groupBy("window") \
-            .pivot("sentiment_level", ['1', '0', '-1']) \
+            .pivot("sentiment_level", ['100', '50', '0']) \
             .sum("count") \
             .drop("window") \
             .na.fill(0) \
@@ -141,8 +154,7 @@ class WindowAggregator(object):
             .orderBy(df['count'].desc(), df['hashtag'])
 
         rank4SortDF = df \
-            .select('*', rank() \
-                    .over(window).alias('rank')) \
+            .select('*', rank().over(window).alias('rank')) \
             .filter(col('rank') <= 2)
 
         hashTagTopFiveDF = rank4SortDF \
@@ -152,6 +164,14 @@ class WindowAggregator(object):
             .drop("window")
 
         self.send_data_with_nested_form(hashTagTopFiveDF)
+
+    def sentiment_score_timeseries(self, df, epoch_id):
+        df02 = df \
+            .orderBy("created_at") \
+            .drop("window")
+
+        self.send_data_with_nested_list_form(df02)
+
 
     def send_data(self, df):
         data_list = df \
@@ -185,6 +205,26 @@ class WindowAggregator(object):
                 data=form
             )
 
+    def send_data_with_nested_list_form(self, df):
+        data = {}
+
+        created_at = []
+        score = []
+        for row in df.collect():
+            created_at.append(row.created_at.isoformat())
+            score.append(row.score)
+
+        if not created_at:
+            return
+
+        data["createdAtArray"] = json.dumps(created_at)
+        data["scoreArray"] = json.dumps(score)
+
+        requests.post(
+            self.target,
+            data=data
+        )
+
 
 # Sentiment_level_Sec
 sentimentLevelNumSecDF = spark.readStream \
@@ -206,13 +246,13 @@ exec_sentimentLevelNumSecDF = sentimentLevelNumSecDF \
 # Sentiment_level_Min
 sentimentLevelNumMinDF = spark.readStream \
     .table("ready_table") \
-    .withWatermark("created_at", "10 seconds") \
+    .withWatermark("created_at", "1 minutes") \
     .groupBy(
-        window(col("created_at"), "5 seconds"), col("sentiment_level")
+        window(col("created_at"), "1 minutes", "50 seconds"), col("sentiment_level")
     ) \
     .count()
 
-exec_sentimentLevelNumSecDF = sentimentLevelNumSecDF \
+exec_sentimentLevelNumSecDF = sentimentLevelNumMinDF \
     .writeStream \
     .foreachBatch(
         WindowAggregator('update/sentiment_level_number/min/1') \
@@ -225,7 +265,7 @@ HashTagNumMinDF = spark.readStream \
     .table("ready_table") \
     .withWatermark("created_at", "1 minutes") \
     .groupBy(
-        window(col("created_at"), "20 seconds", "10 seconds"), col("hashtag")
+        window(col("created_at"), "1 minutes", "50 seconds"), col("hashtag")
     ) \
     .count() \
     .where(col("hashtag") != '')
@@ -238,14 +278,20 @@ exec_sentimentLevelNumSecDF = HashTagNumMinDF \
     .start()
 
 
-# SentimentScore_TimeSeires  :: Woring on it
-# df = spark.readStream \
-#     .table("ready_table") \
-#     .withWatermark("created_at", "1 seconds") \
-#     .groupBy(
-#         window(col("created_at"), "20 seconds"), col("hashtag")
-#     ) \
-#     .count() \
-#     .where(col("hashtag") != '')
+# SentimentScore_TimeSeires
+sentimentScoreTimeSeriesDF = spark.readStream \
+    .table("ready_table") \
+    .withWatermark("created_at", "2 seconds") \
+    .groupBy(
+        window(col("created_at"), "1 minutes", "50 seconds"), col("created_at"), col("sentiment_level").alias("score") \
+    ) \
+    .mean()
+
+exec_sentimentScoreTimeSeriesDF = sentimentScoreTimeSeriesDF \
+    .writeStream \
+    .foreachBatch(
+        WindowAggregator('update/sentiment_score_time_series') \
+        .sentiment_score_timeseries) \
+    .start()
 
 spark.streams.awaitAnyTermination()

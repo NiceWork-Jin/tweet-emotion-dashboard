@@ -38,4 +38,4 @@ if __name__ == '__main__':
     """
     s_socket = ServerSocket('localhost', 9999)
     tweetListener = TweetListener(s_socket, load_my_auth())
-    tweetListener.filter(track=['squid game'], languages=['en'])
+    tweetListener.filter(track=['NewYork'], languages=['en'])
