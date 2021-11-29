@@ -3,7 +3,7 @@
 트위터의 특정 키워드에 대한 사용자의 반응을 대시보드를 통해 나타냅니다.
 
 # 실행 결과
-![대시보드결과](https://user-images.githubusercontent.com/42059680/143829252-8cd83be0-29d6-49d5-b32d-0148c389d7dd.png)
+![대시보드결과](https://user-images.githubusercontent.com/42059680/143829651-9fdd2c01-3cba-4844-8d52-4fd0c196ecda.png)
 
 # Skill/Verion
 - Python 3.8
