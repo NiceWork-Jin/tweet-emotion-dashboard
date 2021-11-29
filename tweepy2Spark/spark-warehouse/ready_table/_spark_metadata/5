@@ -1,2 +1,4 @@
 v1
-{"path":"file:///Users/seongjin/programming/working/tweepy2Spark/spark-warehouse/ready_table/part-00000-c995c966-6925-45a7-90dc-edabcb29fa83-c000.snappy.parquet","size":1227,"isDir":false,"modificationTime":1637318033864,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/seongjin/programming/working/tweepy2Spark/spark-warehouse/ready_table/part-00000-b7dc0875-c4d7-4035-8b7f-e31a378080fa-c000.snappy.parquet","size":1218,"isDir":false,"modificationTime":1638171472766,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/seongjin/programming/working/tweepy2Spark/spark-warehouse/ready_table/part-00001-6df0f14e-5bd1-4c11-ac9e-a74788b2afb3-c000.snappy.parquet","size":1135,"isDir":false,"modificationTime":1638171472969,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/seongjin/programming/working/tweepy2Spark/spark-warehouse/ready_table/part-00002-494c7b5b-9cb9-4655-a7d2-1f9225fd96b7-c000.snappy.parquet","size":1135,"isDir":false,"modificationTime":1638171472763,"blockReplication":1,"blockSize":33554432,"action":"add"}

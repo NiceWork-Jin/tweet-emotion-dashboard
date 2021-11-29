@@ -37,11 +37,11 @@ def detect_language(text):
 def get_sentiment(text):
     sentiment = TextBlob(text).sentiment.polarity
     if sentiment > 0:
-        return 1  # Positive
+        return 100  # Positive
     elif sentiment < 0:
-        return -1  # Negative
+        return 0  # Negative
     else:
-        return 0  # Neutral
+        return 50  # Neutral
 
 
 def from_created_at(x):
@@ -120,9 +120,8 @@ readyDF.writeStream \
 
 # Window Function
 class WindowAggregator(object):
-    def __init__(self, uri, host='127.0.0.1', port=5000):
-        self.uri = uri
-        self.target = f'http://{host}:{port}/{uri}'
+    def __init__(self, url, host='127.0.0.1', port=5000):
+        self.target = f'http://{host}:{port}/{url}'
 
     def sentiment_level_num(self, df, epoch_id):
         countByLevelDF = df \

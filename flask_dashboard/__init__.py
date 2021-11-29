@@ -15,7 +15,7 @@ def open_dashboard_page():
 
 @app.route('/update/sentiment_level_number/sec/1', methods=['POST'])
 def update_sentiment_level_number_1_sec():
-    global sentiment_level_number_1_sec
+    global sentiment_lzevel_number_1_sec
     sentiment_level_number_1_sec['positive'] = request.form['positive']
     sentiment_level_number_1_sec['neutral'] = request.form['neutral']
     sentiment_level_number_1_sec['negative'] = request.form['negative']

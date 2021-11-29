@@ -2,9 +2,9 @@
 
 function reactNumberSec() {
 //  get random number of each states
-    let positive = Math.floor(Math.random() * 51);
-    let neutral = Math.floor(Math.random() * 51);
-    let negative = Math.floor(Math.random() * 51);
+    let positive = Math.floor(Math.random() * 5);
+    let neutral = Math.floor(Math.random() * 5);
+    let negative = Math.floor(Math.random() * 5);
 
     return {
         'positive': positive,

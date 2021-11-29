@@ -6,10 +6,221 @@
   <component name="ChangeListManager">
     <list default="true" id="b1fee520-0bee-42ab-abe9-3fd1b2f30d68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_dashboard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_dashboard/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_dashboard/static/js/react_num_per_sec.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/static/js/react_num_per_sec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_dashboard/static/js/test/data_generate_and_request.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/static/js/test/data_generate_and_request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_dashboard/static/js/FakeData_generator/fakeData_sentimentLevel_number_1_sec.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/static/js/FakeData_generator/fakeData_sentimentLevel_number_1_sec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_dashboard/static/js/emojiByScore_1_sec.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/static/js/emojiByScore_1_sec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_dashboard/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_dashboard/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter_preprocessingWithSpark/.ipynb_checkpoints/Predicting_TweetWorld_Emotion-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter_preprocessingWithSpark/.ipynb_checkpoints/Predicting_TweetWorld_Emotion-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter_preprocessingWithSpark/.ipynb_checkpoints/SocketListener-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter_preprocessingWithSpark/Fake_TweetSocketAPI.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter_preprocessingWithSpark/Fake_TweetSocketAPI.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter_preprocessingWithSpark/SocketListener.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/commits/41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/metadata" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/0" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/1" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/10" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/11" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/12" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/13" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/14" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/14" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/15" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/15" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/16" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/17" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/17" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/18" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/18" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/19" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/19" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/2" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/20" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/21" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/21" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/22" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/22" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/23" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/23" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/24" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/24" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/25" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/25" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/26" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/27" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/27" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/28" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/28" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/3" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/4" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/5" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/6" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/7" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/8" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/9" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/checkpoint/dir/ready_table/offsets/9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-05ab657d-145e-459c-abca-adae2fb27bf9-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-0f6d463a-5249-425c-a7f4-a0979e49d733-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-17caf24c-90a1-47d5-91e4-f409b502e664-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-2af163aa-d801-4dc7-aee0-2349659efae9-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-2ccbc542-7b55-4700-b115-3d0523d9cff5-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-2fedae3c-8b66-4357-87d0-23fc033c77ba-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-3296c4eb-7189-4a94-8a03-db9683abb039-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-389acf75-a7c7-46be-abc5-05d3eec8e378-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-3d1d7ce8-1a62-4ea2-b85b-1e7606e56f77-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-44bec8be-6af9-4d32-8a3d-5b3086f749a0-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-5229b86f-befd-4456-912e-685b1ce9f102-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-53f50bae-7397-44f8-82bc-29cfec00e6d5-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-55221c05-be89-47a5-ae7d-c87493c21199-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-56a3742b-4e99-4b1f-b7c6-1c453061571e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-5dfdc6e5-6f7d-4036-9265-4200f2cd0c99-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-6130ad86-0c8b-46c0-899d-23d09bbb433c-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-64180197-04e0-4a24-9326-e7354f7daa3f-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-65a1f62c-83ad-4302-81bc-a6daba201be1-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-6611c62e-34e1-4047-8679-765e486ec004-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-6d61e196-3125-47a0-a7ef-5df384572a9d-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-758f87f0-f4ce-4654-9f68-8fcac8952943-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-7eaeba04-4457-4627-9762-2b6b67841cc9-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-89a023af-0a2e-4d11-8370-0e4237e5feff-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-8b4d73da-aff9-4f86-be0d-96a948275cd2-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-93207d44-a675-419e-ab56-144040380032-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-980bdfca-d02b-4329-a7f2-0f30c6edf36e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-9c20067a-6eaa-4a6a-9bb4-f2144641937f-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-a032e0e2-965f-4e1d-a05c-a83b204b8614-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-a3598731-0cbb-4656-b7eb-3f2c50637072-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-a4a0c590-9b97-4169-919b-faad40f42924-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-a81ba0bb-0d7f-46ca-a2e1-9e82125afc17-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-bb9be721-c6c7-4b13-9a26-3001058cb9b3-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-c818c2be-49f3-41f8-9966-987602d51c70-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-c995c966-6925-45a7-90dc-edabcb29fa83-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-cdb420ec-a92c-48e1-9ea8-88a68454a695-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-d868e6c7-6d06-4b5b-b7f4-4dfc07c56e0f-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-de9b729a-1a25-4cc1-affb-2280913f6571-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-e2e46036-8f66-47ed-b520-50522f108a37-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-ea90f67c-a007-40c2-875e-6b5014109fc6-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-ec2097f0-6c31-45f5-8344-1a798ad282c4-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-f2c8475f-af97-48dd-a008-0e87e1da9574-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00000-f88108eb-60f1-435f-9b8f-34477c207f2a-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00001-10a9f15f-7835-4c93-b8b5-6db872816b90-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00001-26cdbeb7-166f-4f44-9bc5-a2af73bf0766-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00001-3c1a1849-1c6b-40cf-a22d-6f44848b96b8-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00001-814969fb-3a11-4263-8203-ebf24ddef56c-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00001-a013d99b-7be3-446e-a2c1-7b259e40111b-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00001-cc1b366e-807e-4bbf-bac5-6b76c9b51483-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00001-ddced51b-61ac-496d-bfe1-68826a5ab96b-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00001-e3e49e27-b5cc-4af7-a814-487b6067ca8e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00001-f76c2634-8fb9-4032-8c1e-1b5f044cf837-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00002-1906b03a-a401-497b-a733-7afa4e538307-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/.part-00002-4a68e798-3b0d-411a-8405-47ad99a33d28-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/0" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/1" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/10" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/11" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/12" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/13" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/14" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/14" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/15" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/15" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/16" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/17" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/17" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/18" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/18" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/19.compact" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/19.compact" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/2" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/20" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/21" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/21" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/22" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/22" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/23" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/23" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/24" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/24" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/25" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/25" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/26" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/27" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/27" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/28" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/28" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/29.compact" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/3" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/39.compact" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/4" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/5" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/6" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/7" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/8" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/9.compact" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/_spark_metadata/9.compact" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-05ab657d-145e-459c-abca-adae2fb27bf9-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-0f6d463a-5249-425c-a7f4-a0979e49d733-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-17caf24c-90a1-47d5-91e4-f409b502e664-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-2af163aa-d801-4dc7-aee0-2349659efae9-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-2ccbc542-7b55-4700-b115-3d0523d9cff5-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-2fedae3c-8b66-4357-87d0-23fc033c77ba-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-3296c4eb-7189-4a94-8a03-db9683abb039-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-389acf75-a7c7-46be-abc5-05d3eec8e378-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-3d1d7ce8-1a62-4ea2-b85b-1e7606e56f77-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-44bec8be-6af9-4d32-8a3d-5b3086f749a0-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-5229b86f-befd-4456-912e-685b1ce9f102-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-53f50bae-7397-44f8-82bc-29cfec00e6d5-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-55221c05-be89-47a5-ae7d-c87493c21199-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-56a3742b-4e99-4b1f-b7c6-1c453061571e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-5dfdc6e5-6f7d-4036-9265-4200f2cd0c99-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-6130ad86-0c8b-46c0-899d-23d09bbb433c-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-64180197-04e0-4a24-9326-e7354f7daa3f-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-65a1f62c-83ad-4302-81bc-a6daba201be1-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-6611c62e-34e1-4047-8679-765e486ec004-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-6d61e196-3125-47a0-a7ef-5df384572a9d-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-758f87f0-f4ce-4654-9f68-8fcac8952943-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-7eaeba04-4457-4627-9762-2b6b67841cc9-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-89a023af-0a2e-4d11-8370-0e4237e5feff-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-8b4d73da-aff9-4f86-be0d-96a948275cd2-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-93207d44-a675-419e-ab56-144040380032-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-980bdfca-d02b-4329-a7f2-0f30c6edf36e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-9c20067a-6eaa-4a6a-9bb4-f2144641937f-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-a032e0e2-965f-4e1d-a05c-a83b204b8614-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-a3598731-0cbb-4656-b7eb-3f2c50637072-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-a4a0c590-9b97-4169-919b-faad40f42924-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-a81ba0bb-0d7f-46ca-a2e1-9e82125afc17-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-bb9be721-c6c7-4b13-9a26-3001058cb9b3-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-c818c2be-49f3-41f8-9966-987602d51c70-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-c995c966-6925-45a7-90dc-edabcb29fa83-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-cdb420ec-a92c-48e1-9ea8-88a68454a695-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-d868e6c7-6d06-4b5b-b7f4-4dfc07c56e0f-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-de9b729a-1a25-4cc1-affb-2280913f6571-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-e2e46036-8f66-47ed-b520-50522f108a37-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-ea90f67c-a007-40c2-875e-6b5014109fc6-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-ec2097f0-6c31-45f5-8344-1a798ad282c4-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-f2c8475f-af97-48dd-a008-0e87e1da9574-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00000-f88108eb-60f1-435f-9b8f-34477c207f2a-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00001-10a9f15f-7835-4c93-b8b5-6db872816b90-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00001-26cdbeb7-166f-4f44-9bc5-a2af73bf0766-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00001-3c1a1849-1c6b-40cf-a22d-6f44848b96b8-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00001-814969fb-3a11-4263-8203-ebf24ddef56c-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00001-a013d99b-7be3-446e-a2c1-7b259e40111b-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00001-cc1b366e-807e-4bbf-bac5-6b76c9b51483-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00001-ddced51b-61ac-496d-bfe1-68826a5ab96b-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00001-e3e49e27-b5cc-4af7-a814-487b6067ca8e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00001-f76c2634-8fb9-4032-8c1e-1b5f044cf837-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00002-1906b03a-a401-497b-a733-7afa4e538307-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/spark-warehouse/ready_table/part-00002-4a68e798-3b0d-411a-8405-47ad99a33d28-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweepy2Spark/structuredStreaming.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweepy2Spark/structuredStreaming.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +238,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="2058Urfs3BC3AGbacsNaam1HVVz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -39,11 +247,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flask_dashboard/static/js/FakeData_generator" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.__init__">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flask_dashboard/static/js/FakeData_generator" />
+      <recent name="$PROJECT_DIR$/flask_dashboard/static/js" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tweet-emotion-dashboard" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,10 +300,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="structuredStreaming" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tweet-emotion-dashboard" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tweepy2Spark" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tweepy2Spark/structuredStreaming.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.structuredStreaming" />
+        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>

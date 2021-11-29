@@ -1,0 +1,3 @@
+v1
+{"path":"file:///Users/seongjin/programming/working/jupyter_preprocessingWithSpark/spark-warehouse/ready_table/part-00000-8885edf3-4f84-40d1-909f-e9073db96c88-c000.snappy.parquet","size":1263,"isDir":false,"modificationTime":1637310241039,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/seongjin/programming/working/jupyter_preprocessingWithSpark/spark-warehouse/ready_table/part-00001-31183f8e-8e8f-476b-a5cb-1bbc222e476e-c000.snappy.parquet","size":1135,"isDir":false,"modificationTime":1637310240455,"blockReplication":1,"blockSize":33554432,"action":"add"}

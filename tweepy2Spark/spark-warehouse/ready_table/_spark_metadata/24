@@ -1,2 +1,2 @@
 v1
-{"path":"file:///Users/seongjin/programming/working/tweepy2Spark/spark-warehouse/ready_table/part-00000-c818c2be-49f3-41f8-9966-987602d51c70-c000.snappy.parquet","size":1135,"isDir":false,"modificationTime":1637318059219,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/seongjin/programming/working/tweepy2Spark/spark-warehouse/ready_table/part-00000-cb87276a-7bc6-4208-93c9-70c3ce1e2eb7-c000.snappy.parquet","size":1236,"isDir":false,"modificationTime":1638171507653,"blockReplication":1,"blockSize":33554432,"action":"add"}
