@@ -3,7 +3,7 @@
 트위터의 특정 키워드에 대한 사용자의 반응을 대시보드를 통해 나타냅니다.
 
 # 실행 결과
-<img width="454" alt="dashboard_result" src="https://user-images.githubusercontent.com/42059680/141749397-0177095b-cb1b-4745-a174-633b65d80abd.png">
+![대시보드결과](https://user-images.githubusercontent.com/42059680/143829252-8cd83be0-29d6-49d5-b32d-0148c389d7dd.png)
 
 # Skill/Verion
 - Python 3.8
@@ -20,7 +20,7 @@
 - Jupyter Notebook (작업 코드 디버깅)
 
 # Architecture
-![full_architecture](https://user-images.githubusercontent.com/42059680/141749305-4c7c8edc-e404-464b-b441-fa9c07bcb83f.jpeg)
+![전체구성](https://user-images.githubusercontent.com/42059680/143828753-37f368d5-6b60-4809-84d8-ca91152679e3.png)
 - 데이터 수집
     - 트위터의 실시간 데이터를 수집을 위해 Tweepy 라이브러리를 사용했습니다.
     - 수집된 데이터는 TCP 통신을 통하여 Spark로 전달됩니다.
@@ -35,7 +35,7 @@
 
 # 데이터 수집
 ## Architecture
-![source_architecture](https://user-images.githubusercontent.com/42059680/141751257-370f4874-367f-43cd-a7b3-320bd2f678a4.jpeg)
+![데이터 수집](https://user-images.githubusercontent.com/42059680/143829181-ab2061f4-ca67-4eff-b3c0-99f451dcfc40.png)
 트위터 데이터는 TCP 통신을 통해 스파크로 전달 됩니다. 따라서 트위터에 데이터를 요청하기 전에 소켓 간에 연결 객체를 생성합니다. 양측 소켓이 연결되고 나면, 서버는 트위터에 데이터를 요청합니다. 서버는 트위터에서 수신 받은 데이터를 연결된 소켓 객체를 통해 클라이언트로 전달합니다. 데이터 전송을 멈추고 싶다면, 클라이언트 측에서 소켓을 닫습니다.
 
 ## Code explantion
@@ -50,7 +50,7 @@
 
 # 데이터 처리
 ## Architecture
-![data_process_architecture](https://user-images.githubusercontent.com/42059680/141749385-593762c7-f45d-4bd8-adac-6513bdba3303.jpeg)
+![데이터 처리](https://user-images.githubusercontent.com/42059680/143829236-135bce2a-66c3-411c-b5f7-938383bb5aed.png)
 
 스파크 세션을 생성하고, [main.py](http://main.py)을 통해 트위터 데이터를 전송 받습니다. 전송받은 데이터는 스파크의 구조화된 스트리밍을 통해 전처리 했습니다. 전처리된 데이터는 Web API인 *[http://localhost:5000/](http://localhost:5000/~~)location 로 전달됩니다. 따라서 반드시 [tweetListener.py](https://github.com/nicework-jin/tweet-emotion-dashboard/blob/master/tweepy2Spark/tweetListener.py)를 실행하기 전에 Web API를 실행시켜 5000번 포트를 열어둬야 합니다.
 - 참고로 앞에서 언급한 주소에서 location은 실제 주소를 의미하지 않습니다. 해당 주소는 전달하고자 하는 데이터의 종류에 따라 다른 값을 가집니다.  각 location에 대해서는 "대시보드"에서 설명합니다.
@@ -65,7 +65,7 @@
 
 # 대시보드
 ## Architecture
-![dashboard_architecture](https://user-images.githubusercontent.com/42059680/141749418-9185f2c1-8985-46c2-beef-c6202cf9d7b8.jpeg)
+![데이터 시각화](https://user-images.githubusercontent.com/42059680/143829284-cb26010c-c3cb-4fa3-ac26-b79dda2148ae.png)
 대시보드는 Web API와 View로 구성되어 있습니다. Web API를 동작시키면 자동으로 뷰가 활성화 됩니다. 뷰는 차트의 성격에 따라 주기적으로 Web API에 데이터를 요청하게 됩니다. 그리고 Web API는 현재 보유한 데이터를 대시보드로 전송합니다. 스파크에서 주기적으로 Web API에 데이터를 전송하고 있으므로, 데이터는 계속적으로 갱신 됩니다. 이 때, 데이터의 타임스탬프는 대시보드에 도착한 시각이 아니라 데이터가 발생된 시각을 기준으로 합니다. 그렇지 않으면, 전송 지연이 발생 했을 시에 정확한 정보 파악이 어려워질 수 있습니다.
 
 ## Code explantion
